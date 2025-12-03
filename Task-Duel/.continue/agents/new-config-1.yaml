@@ -1,0 +1,25 @@
+# ARTHER UPDATED THIS - This is an example configuration file
+# To learn more, see the full config.yaml reference: https://docs.continue.dev/reference
+
+name: ARTHERS-TAYLOR's Config
+version: 2.69
+schema: v1
+
+# Define which models can be used
+# https://docs.continue.dev/customization/models
+models:
+  - name: my gpt-5
+    provider: openai
+    model: gpt-5
+    apiKey: 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
+  - uses: gpt-5-turbo/continue-gpt-5-turbo
+    with:
+      OPENAI_API_KEY: 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
+  - uses: chatgpt`/continue-chatgpt
+    with:
+      ANTHROPIC_API_KEY: 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
+
+# MCP Servers that Continue can access
+# https://docs.continue.dev/customization/mcp-tools
+mcpServers:
+  - uses: 
